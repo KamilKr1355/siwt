@@ -1,0 +1,153 @@
+{
+  "model": "llama3.2:3b",
+  "temperature": 0.3,
+  "seed": 42,
+  "mock": false,
+  "persona": "Lirael",
+  "results": [
+    {
+      "user": "Co masz dzisiaj na sprzedaż i ile to kosztuje?",
+      "persona": "Lirael",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Mam dwie mikstury, które mogą przynieść ci szczęście w Twoim podróży. Jedna kosztuje 10 monet i zawiera składniki do ochrony przed niebezpiecznymi zjawiskami. Druga mikstura jest droższa, ale jej składniki mogą przynieść ci wizję przyszłości.\", \"action\": \"talk\"}",
+      "reply": "Mam dwie mikstury, które mogą przynieść ci szczęście w Twoim podróży. Jedna kosztuje 10 monet i zawiera składniki do ochrony przed niebezpiecznymi zjawiskami. Druga mikstura jest droższa, ale jej składniki mogą przynieść ci wizję przyszłości.",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Mam dwie mikstury, które mogą przynieść ci szczęście w Twoim podróży. Jedna kosztuje 10 monet i zawiera składniki do ochrony przed niebezpiecznymi zjawiskami. Druga mikstura jest droższa, ale jej składniki mogą przynieść ci wizję przyszłości.",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": true,
+      "state_ok": true,
+      "id": 1,
+      "name": "Pytanie o ofertę"
+    },
+    {
+      "user": "Poproszę jedną miksturę.",
+      "persona": "Lirael",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Jedna mikstura to 10 monet. Czy chcesz ją kupić?\", \"action\": \"talk\"}",
+      "reply": "Jedna mikstura to 10 monet. Czy chcesz ją kupić?",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Jedna mikstura to 10 monet. Czy chcesz ją kupić?",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": false,
+      "state_ok": false,
+      "id": 2,
+      "name": "Poprawny zakup"
+    },
+    {
+      "user": "Poproszę jeszcze jedną miksturę.",
+      "persona": "Lirael",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Ostatnia mikstura jest już dostępna\", \"action\": \"talk\"}",
+      "reply": "Ostatnia mikstura jest już dostępna",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Ostatnia mikstura jest już dostępna",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": false,
+      "state_ok": false,
+      "id": 3,
+      "name": "Zakup bez środków"
+    },
+    {
+      "user": "Chcę kupić miksturę.",
+      "persona": "Lirael",
+      "state_before": {
+        "coins": 50,
+        "stock": 0,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Jedna mikstura kosztuje 10 monet. Czy chcesz je kupić?\", \"action\": \"talk\"}",
+      "reply": "Jedna mikstura kosztuje 10 monet. Czy chcesz je kupić?",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Jedna mikstura kosztuje 10 monet. Czy chcesz je kupić?",
+      "state_after": {
+        "coins": 50,
+        "stock": 0,
+        "price": 10
+      },
+      "intent_ok": false,
+      "state_ok": true,
+      "id": 4,
+      "name": "Pusty magazyn"
+    },
+    {
+      "user": "Hmm... sam nie wiem, może coś na te moje bóle w kolanach?",
+      "persona": "Lirael",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Mogę ci pomóc z bólami w kolanach? Moje mikstury mogą przynieść ci ciepło i ulgę. Czy chcesz kupić jedną?\", \"action\": \"talk\"}",
+      "reply": "Mogę ci pomóc z bólami w kolanach? Moje mikstury mogą przynieść ci ciepło i ulgę. Czy chcesz kupić jedną?",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Mogę ci pomóc z bólami w kolanach? Moje mikstury mogą przynieść ci ciepło i ulgę. Czy chcesz kupić jedną?",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": true,
+      "state_ok": true,
+      "id": 5,
+      "name": "Niejasna wypowiedź"
+    },
+    {
+      "user": "Sprzedam ci mój miecz za 20 monet.",
+      "persona": "Lirael",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Miecz to nie tylko narzędzie wojny, ale i symbol twojej osobistej historii. Czy jest on w stanie przekonać cię, że jego wartość przekracza cenę?\", \"action\": \"talk\"}",
+      "reply": "Miecz to nie tylko narzędzie wojny, ale i symbol twojej osobistej historii. Czy jest on w stanie przekonać cię, że jego wartość przekracza cenę?",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Miecz to nie tylko narzędzie wojny, ale i symbol twojej osobistej historii. Czy jest on w stanie przekonać cię, że jego wartość przekracza cenę?",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": true,
+      "state_ok": true,
+      "id": 6,
+      "name": "Nieobsługiwana czynność"
+    }
+  ]
+}

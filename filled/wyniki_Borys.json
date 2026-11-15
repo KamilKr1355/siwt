@@ -1,0 +1,153 @@
+{
+  "model": "llama3.2:3b",
+  "temperature": 0.3,
+  "seed": 42,
+  "mock": false,
+  "persona": "Borys",
+  "results": [
+    {
+      "user": "Co masz dzisiaj na sprzedaż i ile to kosztuje?",
+      "persona": "Borys",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Mam dwie mikstury\", \"action\": \"talk\"}",
+      "reply": "Mam dwie mikstury",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Mam dwie mikstury",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": true,
+      "state_ok": true,
+      "id": 1,
+      "name": "Pytanie o ofertę"
+    },
+    {
+      "user": "Poproszę jedną miksturę.",
+      "persona": "Borys",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Jedna mikstura kosztuje 10 monet\", \"action\": \"talk\"}",
+      "reply": "Jedna mikstura kosztuje 10 monet",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Jedna mikstura kosztuje 10 monet",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": false,
+      "state_ok": false,
+      "id": 2,
+      "name": "Poprawny zakup"
+    },
+    {
+      "user": "Poproszę jeszcze jedną miksturę.",
+      "persona": "Borys",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Jedna mikstura kosztuje 10 monet\", \"action\": \"talk\"}",
+      "reply": "Jedna mikstura kosztuje 10 monet",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Jedna mikstura kosztuje 10 monet",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": false,
+      "state_ok": false,
+      "id": 3,
+      "name": "Zakup bez środków"
+    },
+    {
+      "user": "Chcę kupić miksturę.",
+      "persona": "Borys",
+      "state_before": {
+        "coins": 50,
+        "stock": 0,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Mikstura kosztuje 10 monet.\", \"action\": \"talk\"}",
+      "reply": "Mikstura kosztuje 10 monet.",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Mikstura kosztuje 10 monet.",
+      "state_after": {
+        "coins": 50,
+        "stock": 0,
+        "price": 10
+      },
+      "intent_ok": false,
+      "state_ok": true,
+      "id": 4,
+      "name": "Pusty magazyn"
+    },
+    {
+      "user": "Hmm... sam nie wiem, może coś na te moje bóle w kolanach?",
+      "persona": "Borys",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"Mogę Ci pomóc z bólem w kolanach? Moje mikstury nie pomogą, ale mogę Ci sprzedać lekki szklany wodę\", \"action\": \"talk\"}",
+      "reply": "Mogę Ci pomóc z bólem w kolanach? Moje mikstury nie pomogą, ale mogę Ci sprzedać lekki szklany wodę",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "Mogę Ci pomóc z bólem w kolanach? Moje mikstury nie pomogą, ale mogę Ci sprzedać lekki szklany wodę",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": true,
+      "state_ok": true,
+      "id": 5,
+      "name": "Niejasna wypowiedź"
+    },
+    {
+      "user": "Sprzedam ci mój miecz za 20 monet.",
+      "persona": "Borys",
+      "state_before": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "raw": "{\"reply\": \"To jest za drogo, mogę to kupić za 15\", \"action\": \"talk\"}",
+      "reply": "To jest za drogo, mogę to kupić za 15",
+      "proposed_action": "talk",
+      "format_ok": true,
+      "decision": "OK (rozmowa)",
+      "message": "To jest za drogo, mogę to kupić za 15",
+      "state_after": {
+        "coins": 15,
+        "stock": 2,
+        "price": 10
+      },
+      "intent_ok": true,
+      "state_ok": true,
+      "id": 6,
+      "name": "Nieobsługiwana czynność"
+    }
+  ]
+}
